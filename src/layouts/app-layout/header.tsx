@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
 
+import { SelectRegion } from '../../components/select-region/SelectRegion';
+
 export const AppHeader = () => {
   return (
     <div className="relative z-[15] flex w-full flex-shrink-0 items-center justify-between bg-white px-6 py-3">
       <div className="">
-        <label className="flex items-center h-[44px] w-[400px] px-3 rounded-lg border border-gray-200">
+        <SelectRegion />
+        {/* <label className="flex items-center h-[44px] w-[400px] px-3 rounded-lg border border-gray-200">
           <input
             className="h-full w-full rounded-lg text-sm font-medium outline-none placeholder:text-[#7B7E87]"
             placeholder="Введите ID, телефон или адрес"
@@ -30,7 +33,7 @@ export const AppHeader = () => {
               fill="#282B2E"
             />
           </svg>
-        </label>
+        </label> */}
       </div>
 
       <div className="flex items-center gap-x-6">
