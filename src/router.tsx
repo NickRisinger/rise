@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { AppLayout } from './layouts/app-layout/layout';
 import { IndexPage } from './pages/Index';
+import { ParserPage } from './pages/parser/ParserPage';
 import { TestPage } from './pages/TestPage';
 
 export const Router = () => {
@@ -49,7 +50,7 @@ export const Router = () => {
 
           <Route path="moderation" element={<TestPage r="moderation" />} />
 
-          <Route path="parser" element={<TestPage r="parser" />} />
+          <Route path="parser" element={<ParserPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
